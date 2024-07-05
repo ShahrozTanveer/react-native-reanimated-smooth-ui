@@ -1,19 +1,21 @@
-import { type PropsWithChildren } from 'react';
-import { StyleSheet, Text } from 'react-native';
+// import { type PropsWithChildren } from 'react';
+// import { StyleSheet, Text } from 'react-native';
 
-interface Props {}
+import CheckBoxInteractions from './CheckBoxInteractions';
 
-const AppText = (props: PropsWithChildren<Props>) => {
-  return <Text style={styles.text}>{props.children || 'Test'}</Text>;
-};
+// interface Props {}
 
-const styles = StyleSheet.create({
-  container: {
-    padding: 8,
-    alignItems: 'center',
-    borderRadius: 8,
-  },
-  text: { color: 'green' },
-});
+// const AppText = (props: PropsWithChildren<Props>) => {
+//   return <Text style={styles.text}>{props.children || 'Test'}</Text>;
+// };
 
-export default AppText;
+// const styles = StyleSheet.create({
+//   container: {
+//     padding: 8,
+//     alignItems: 'center',
+//     borderRadius: 8,
+//   },
+//   text: { color: 'green' },
+// });
+export type { DataType } from './CheckBoxInteractions/types';
+export default CheckBoxInteractions;
