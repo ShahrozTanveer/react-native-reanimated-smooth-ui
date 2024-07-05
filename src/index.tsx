@@ -1,4 +1,4 @@
-import React, { type PropsWithChildren } from 'react';
+import { type PropsWithChildren } from 'react';
 import { StyleSheet, Text } from 'react-native';
 
 interface Props {}
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 8,
   },
-  text: { color: 'red' },
+  text: { color: 'green' },
 });
 
 export default AppText;
