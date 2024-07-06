@@ -2,12 +2,10 @@
 
 import { useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
-import CheckBoxInteractions, {
-  type DataType,
-} from 'react-native-reanimated-smooth-ui';
-
+import { type CheckBoxInteractionsItem } from 'react-native-reanimated-smooth-ui';
+import { CheckBoxInteractions } from 'react-native-reanimated-smooth-ui';
 export default function App() {
-  const [data, setData] = useState<Array<DataType>>([
+  const [data, setData] = useState<Array<CheckBoxInteractionsItem>>([
     {
       id: 1,
       title: 'Italian',

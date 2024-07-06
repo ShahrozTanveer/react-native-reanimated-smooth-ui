@@ -10,17 +10,14 @@ npm install react-native-reanimated-smooth-ui
 
 ## Usage
 
-
 ```ts
 
 import { useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
-import CheckBoxInteractions, {
-  type DataType,
-} from 'react-native-reanimated-smooth-ui';
-
+import { type CheckBoxInteractionsItem } from 'react-native-reanimated-smooth-ui';
+import { CheckBoxInteractions } from 'react-native-reanimated-smooth-ui';
 export default function App() {
-  const [data, setData] = useState<Array<DataType>>([
+  const [data, setData] = useState<Array<CheckBoxInteractionsItem>>([
     {
       id: 1,
       title: 'Italian',
@@ -34,6 +31,7 @@ export default function App() {
 
   ]);
   const onItemPressed = (value: boolean, index: number) => {
+    console.log(value, index);
     const temp = [...data];
     if (temp.length && temp[index]) {
       temp[index].checked = value;
@@ -51,7 +49,13 @@ export default function App() {
 
 
 
+
+
 ```
+### Demo
+
+![CheckBoxInteractions Demo](./assets//Screen_Recording_Checkbox.gif)
+
 
 
 ## Contributing

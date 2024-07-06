@@ -8,9 +8,9 @@ import Animated, {
   interpolateColor,
 } from 'react-native-reanimated';
 
-import type { DataType } from './types';
+import type { CheckBoxInteractionsItem } from './types';
 interface ItemInterface {
-  item: DataType;
+  item: CheckBoxInteractionsItem;
   onItemPressed: (value: boolean, index: number) => void;
   index: number;
 }

@@ -2,7 +2,7 @@
   "name": "react-native-reanimated-smooth-ui",
   "version": "0.1.0",
   "description": "react-native-reanimated-smooth-ui enhances user interactions with smooth, animated components powered by react-native-reanimated, perfect for creating engaging experience.",
-  "source": "./src/index.tsx",
+  "source": "./src/index",
   "main": "./lib/commonjs/index.cjs",
   "module": "./lib/module/index.mjs",
   "types": "./lib/typescript/src/index.d.ts",
